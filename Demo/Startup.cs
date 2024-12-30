@@ -47,6 +47,7 @@ namespace Demo
 
             app.UseAuthorization();
             app.UseMiddleware<MyFirstMiddleware>();
+            app.UseMiddleware<LogMiddleware>();
             app.UseMiddleware<BannedFireFoxMiddleware>();
             app.UseMiddleware<CustomHeaderMiddleware>();
             app.UseEndpoints(endpoints =>

@@ -20,6 +20,7 @@ namespace Demo.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogWarning("******************" + DateTime.Now);
             return View();
         }
 
